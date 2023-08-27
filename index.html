@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF 8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/3596543904.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#background">Background</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>University Student</p>
+                <h1>Hi, I'm <span>Gareth</span><br>from Malaysia.</h1>
+                <br>
+                <h2>I am <span class="auto-input"></span></h2>
+            </div>
+        </div>
+    </div>
+    <!---ABOUT-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pfp.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p>I'm Gareth and I'm a university undergraduate studying BSc Computer Science.
+                    <br>
+                    <br>
+                    I speak fluent English and Mandarin Chinese.
+                    <br>
+                    <br>
+                    I like to explore something new that piques my interest. On the side, I mainly draw
+                    anime art and create music ranging from cinematic, JP rock, rap etc and occasionally post
+                    snippets of them on YouTube. As for drawing, I post my finished products on PIXIV, a
+                    platform for many various artists</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('other')">Other</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Developer Skills</span>
+                                <br>
+                                I started programming with Python when I was 16 years old. I learnt
+                                it during computer science class and in time, I decided to explore
+                                the rabbit hole of Python.
+                            </li>
+                            <li>
+                                <span>Web Development</span>
+                                <br>
+                                I decided to learn web development as it caught my interest. After
+                                being confident with my skills of intermediate HTML,CSS and Javascript,
+                                I am helping my friend to build a website for a startup.
+                            </li>
+                            <li>
+                                <span>Game Creation</span>
+                                <br>
+                                I also had interest in creating games. Therefore, I decided to learn
+                                how to make games on Unity and make an interactive visual novel on RenPy
+                                from YouTube.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>2022 (Jan - Mar)</span><br>Internship at HELP International School's EdTech department
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>2016-2023</span><br>HELP International School: IGCSE and A-Levels
+                            </li>
+                            <li>
+                                <span>2023 - Current</span><br>University of Exeter: BSc Computer Science
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="other">
+                        <ul>
+                            <li>
+                                <span>Art</span><br><a href="https://www.pixiv.net/en/users/95561528">PIXIV art link</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----Background----->
+    <div id="background">
+        <div class="container">
+            <h1 class="sub-title">Background</h1>
+            <div class="background-list">
+                <div class="languages">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Languages</h2>
+                    <p>Below are the languages that I have learnt:
+                        <br>
+                        <br>
+                        HTML
+                        <br>
+                        CSS
+                        <br>
+                        JavaScript
+                        <br>
+                        Python
+                        <br>
+                        C#
+                    </p>
+                </div>
+                <div class="libraries">
+                    <i class="fa-solid fa-book"></i>
+                    <h2>Libraries</h2>
+                    <p>Below are the libraries that I have learnt:
+                        <br>
+                        <br>
+                        OpenCV
+                        <br>
+                        RenPy
+                        <br>
+                        NumPy
+                        <br>
+                        Tensorflow
+                    </p>
+                </div>
+                <div class="tools">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h2>Tools Used</h2>
+                    <p>Below are the tools that I have used:
+                        <br>
+                        <br>
+                        Unity
+                        <br>
+                        Visual Studio Code
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <br>
+            <p>Links are not working yet.</p>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png">
+                    <div class="layer">
+                        <h3>ATLAS Frontend website</h3>
+                        <br>
+                        <p>This is the website for my friend's startup. It is still in progress.</p>
+                        <a href="#portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png">
+                    <div class="layer">
+                        <h3>KNK Visual Novel</h3>
+                        <br>
+                        <p>This is a fanmade visual novel for chapter 1 of The Garden of Sinners made in RenPy. It is not
+                            released as to avoid copyright issues.
+                        </p>
+                        <a href="video/KNKVN.mov"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png">
+                    <div class="layer">
+                        <h3>Ball Game</h3>
+                        <br>
+                        <p>A simple ball game where you have to roll it to the finish line.
+                        </p>
+                        <a href="#portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work4.png">
+                    <div class="layer">
+                        <h3>AI Python</h3>
+                        <br>
+                        <p>This is an AI made from Python using various modules such as pyttsx3, speech recognition,
+                            stmplib and more to perform various task.
+                        </p>
+                        <a href="video/AI.mov"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="btn" id="see-more">See More</div>
+        </div>
+    </div>
+    <!--Contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>Email: gkzygarethkoh11@gmail.com</p>
+                    <!---<p><i class="fa-solid fa-phone"></i>Phone: </p>--->
+                    <div class="social-icons">
+                        <a href="#contact"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#contact"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                    <a href="#contact" download class="btn btn2">CV not yet available</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Gareth 2023</p>
+        </div>
+    </div>
+</body>
+<script>
+    var typed = new Typed(".auto-input",{
+        strings: [" an artist", " a developer", " a student"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true
+    })
+</script>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwGkf8hc4zR_M-b55S0f3XvfItOfaZ1zX7XWGLVW8W3_NECGABDFMdCImR1_r5lnRGl/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => {
+            msg.innerHTML = "Message isn't sent"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+    })
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    let loadMoreBtn = document.querySelector('#see-more');
+    let currentItem = 3;
+
+    loadMoreBtn.onclick = () => {
+        let boxes = [...document.querySelectorAll('.container .work-list .work')];
+        for (var i = currentItem; i < currentItem + 3 ; i++){
+            if (boxes[i]) { // Check if the element exists before accessing its style property
+                boxes[i].style.display = 'block';
+            }
+        }
+        currentItem += 3;
+
+        if (currentItem >= boxes.length){
+            loadMoreBtn.style.display = 'none';
+        }
+    }
+});
+</script>
+</html>
