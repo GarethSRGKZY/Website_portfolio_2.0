@@ -96,13 +96,13 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    background: linear-gradient(to right, #00ffff 19%, #4965cc 86%);
+    background: linear-gradient(to left, #00ffff 19%, #4965cc 86%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
 
 .header-text h2 span{
-    background: linear-gradient(to right, #00ff99 19%, #ccff66 86%);
+    background: linear-gradient(90deg, rgb(59, 241, 125) 11%, rgba(219,226,59,1) 52%, rgba(0,245,255,1) 89%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
@@ -451,7 +451,7 @@ nav .fa-solid{
     #header{
         background-image: url(images/phoneimg.jpg);
     }
-
+    
     .header-text{
         margin-top: 100%;
         font-size: 16px;
@@ -460,6 +460,13 @@ nav .fa-solid{
     .header-text h1{
         font-size: 30px;
     }
+
+    .header-text h2 span{
+        background: linear-gradient(90deg, rgb(85, 156, 200) 11%, rgba(5,39,130,1) 51%, rgba(0,245,255,1) 88%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    
 
     nav .fa-solid{
         display: block;
